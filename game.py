@@ -37,7 +37,13 @@ while True:
         elif choice < num:
             print("Your guess is too low.")
         
-        choice = int(input("Please guess again >> "))
+        try:
+            choice = int(input("Please guess again >> "))
+            if choice > 0:
+                continue
+        except ValueError:
+            print("Hahahaha, nice try. Please enter an integer.")
+
     else:
         print("Congrats!")
         break
