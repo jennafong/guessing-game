@@ -25,13 +25,13 @@ while True:
         if choice > 0:
             break
     except ValueError:
-            print("Hahahaha, nice try. Please enter an integer.")
+            print("lol, nice try. Please enter an integer.")
             
 
 while True:
     if choice != num:
         if choice >= 100 or choice <= 0:
-            print("Hahahaha, you're funny. Enter a valid number.")
+            print("lol, you're funny. Enter a valid number.")
         elif choice > num:
             print("Your guess is too high.")
         elif choice < num:
@@ -42,7 +42,7 @@ while True:
             if choice > 0:
                 continue
         except ValueError:
-            print("Hahahaha, nice try. Please enter an integer.")
+            print("lol, nice try. Please enter an integer.")
 
     else:
         print("Congrats!")
